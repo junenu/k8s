@@ -9,6 +9,7 @@
     - ESXi上に構築（VMware playerでもVirtualBoxでもOK）
 - 構築サーバーへのアクセス
     - 同じセグメントにあるMacOSからsshで接続
+
 # 構築手順
 ## 必要パッケージのinstall
 ### command
