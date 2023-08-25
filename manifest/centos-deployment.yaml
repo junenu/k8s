@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: centos-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: centos
+  template:
+    metadata:
+      labels:
+        app: centos
+    spec:
+      containers:
+      - name: centos
+        image: centos:latest
+        command:
+        - "/bin/bash"
+        - "-c"
+        - "while true; do sleep 3600; done"
